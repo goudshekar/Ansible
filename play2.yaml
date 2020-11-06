@@ -8,4 +8,9 @@
     debug: msg="{{ ansible_hostname }}"
   - name: Print IP address
     debug: msg="{{ ansible_default_ipv4.address }}"
+  - name: Print uptime of the Host
+    debug: msg="{{ ansible_uptime_seconds }}"
+  - name: Print LSB of the Host
+    debug: msg="{{ ansible_lsb.description }}"
+  
   
