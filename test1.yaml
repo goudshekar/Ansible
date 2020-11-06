@@ -1,2 +1,9 @@
 ---
-- name: First file
+- name: Check system uptime 
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+  - name: Check local system uptime
+    shell: uptime
+    
