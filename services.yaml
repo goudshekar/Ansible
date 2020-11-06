@@ -1,0 +1,11 @@
+---
+- name: Check apache2 service 
+  hosts: all
+  gather_facts: true
+
+  tasks:
+  - name: Service apache2 status
+    service:
+      name: httpd
+      state: started
+
