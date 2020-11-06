@@ -5,6 +5,9 @@
 
   tasks:
   - name: Check local system uptime
-    debug: msg "{{ ansible_hostname }}"
+    debug: 
+    - msg: "{{ ansible_hostname }}"
+    - msg: "{{ ansible_default_ipv4.address }}"
+    
     
 
