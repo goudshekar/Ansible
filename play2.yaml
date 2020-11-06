@@ -1,0 +1,10 @@
+---
+- name: Check remote server connectivity
+  gather_facts: true
+
+  tasks:
+  - name: Print Hostname
+    debug: msg="{{ ansible_hostname }}"
+  - name: Print IP address
+    debug: msg="{{ ansible_default_ipv4.address }}"
+  
