@@ -4,10 +4,10 @@
   gather_facts: true
 
   tasks:
-  - debug: 
-    msg: 
-    - "{{ ansible_hostname }}"
-    - "{{ ansible_default_ipv4.address }}"
+  - name: Print Hostname
+    debug: msg="{{ ansible_hostname }}"
+  - name: Print IP address
+    debug: msg="{{ ansible_default_ipv4.address }}"
 
     
 
