@@ -4,10 +4,10 @@
   gather_facts: true
 
   tasks:
-  - debug: msg=Hostname of the device{{ ansible_hostname }}
-  - debug: msg=IP address of the Host {{ ansible_default_ipv4.address }}
-  - debug: msg=Host {{ ansible_hostname }} uptime {{ ansible_uptime_seconds }}
-  - debug: msg=Host version {{ ansible_lsb.description }}
-  
+  - debug: msg="Hostname of the device{{ ansible_hostname }}"
+  - debug: msg="IP address of the Host {{ ansible_default_ipv4.address }}"
+  - debug: msg="Host {{ ansible_hostname }} uptime {{ ansible_uptime_seconds }}"
+  - debug: msg="Host version {{ ansible_lsb.description }}"
+
   
   
