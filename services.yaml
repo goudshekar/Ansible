@@ -6,6 +6,6 @@
   tasks:
   - name: Service apache2 status
     service:
-      name: apache2
+      name: ssh
       enabled: yes
 
