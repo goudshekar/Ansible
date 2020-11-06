@@ -7,5 +7,5 @@
   - name: Service apache2 status
     service:
       name: apache2
-      state: started
+      enabled: yes
 
