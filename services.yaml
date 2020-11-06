@@ -6,6 +6,6 @@
   tasks:
   - name: Service apache2 status
     service:
-      name: httpd
+      name: apache2
       state: started
 
