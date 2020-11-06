@@ -4,8 +4,7 @@
   gather_facts: true
 
   tasks:
-  - name: Check local system uptime
-    debug: 
+  - debug: 
     msg: 
     - "{{ ansible_hostname }}"
     - "{{ ansible_default_ipv4.address }}"
