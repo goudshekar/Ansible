@@ -1,11 +1,11 @@
 ---
 - name: Check apache2 service 
   hosts: all
-  gather_facts: true
+  gather_facts: false
 
   tasks:
-  - name: Service apache2 status
-    service:
-      name: ssh
-      enabled: yes
+  - name: Service apache2 installation
+    apt:
+      name: apache2
+      state: latest
 
