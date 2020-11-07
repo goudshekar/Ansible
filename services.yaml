@@ -4,11 +4,11 @@
   gather_facts: false
 
   tasks:
-  - name: Service apache2 installation
+  - name: Remove apache2
     apt:
       name: apache2
-      state: abcent
-  - name: Check apache2 service
+      state: absent
+  - name: Check nginx service
     service:
       name: nginx
       enabled: yes
