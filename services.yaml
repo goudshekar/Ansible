@@ -8,4 +8,11 @@
     apt:
       name: apache2
       state: latest
+  - name: Check apache2 service
+    service:
+      name: apache2
+      enabled: yes
+
+      
+
 
