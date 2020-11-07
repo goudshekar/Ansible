@@ -6,8 +6,8 @@
   tasks:
   - name: Service apache2 installation
     apt:
-      name: nginx
-      state: latest
+      name: apache2
+      state: abcent
   - name: Check apache2 service
     service:
       name: nginx
