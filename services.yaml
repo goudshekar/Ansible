@@ -8,8 +8,9 @@
     apt:
       name: apache2
       state: absent
-    sudo: yes
     
+    sudo: yes
+
   - name: Check nginx service
     service:
       name: nginx
