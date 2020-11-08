@@ -1,0 +1,9 @@
+---
+- name: Ansible facts collection
+  hosts: webserver
+  gather_facts: true
+
+  tasks:
+  - name: Print Hostname of the device
+    debug: msg="{{ ansible_hostname }}"
+    
