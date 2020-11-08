@@ -1,6 +1,6 @@
 ---
 - name: Check apache2 service 
-  hosts: all
+  hosts: webserver
   gather_facts: false
 
   tasks:
