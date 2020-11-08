@@ -1,7 +1,7 @@
 ---
 - name: Ansible facts collection
   hosts: webserver
-  gather_facts: true
+  gather_facts: false
 
   tasks:
   - name: Print Hostname of the device
