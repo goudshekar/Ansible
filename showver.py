@@ -10,7 +10,7 @@ password = getpass.getpass("Password: ")
 
 command = input('Enter you command:')
 
-ipv4 = ['172.17.236.68','172.17.236.69']
+ipv4 = ['172.20.8.240','172.20.8.240']
 
 for i in ipv4:
     device = {
